@@ -1,5 +1,6 @@
 import React from 'react'
 
+//This function is used to preview the notes for the user in the card
 
 function NotesItem(props) {
     const { title, description, tag } = props.NotesOfUser

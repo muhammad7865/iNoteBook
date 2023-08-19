@@ -29,6 +29,13 @@ export default function Navbar(props) {
             <Link className="nav-link" to="https://getbootstrap.com/docs/5.3/components/buttons/">Bootstrap</Link>
         </li>
       </ul>
+      <form className="d-flex" role="search">
+      <div className={`form-check form-switch text-${props.status==="light"?"dark":"light"} `}>
+  <input className="form-check-input" onClick={props.toggel} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+  <label className="form-check-label" htmlFor="flexSwitchCheckDefault" color='white'>Enable Dark Mode</label>
+</div>
+
+      </form>
     </div>
   </div>
 </nav>
